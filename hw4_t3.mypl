@@ -1,0 +1,76 @@
+
+struct SimpleStruct
+ var  v1: int = 0;
+var v2 :
+float= 0.0;
+var v3:string="";
+        var v4= nil;
+end
+
+var x=5;
+
+return
+; return
+nil;
+
+set x=
+6; set x .
+y =  6; set x. y .z="hi!" ;
+set y=f ( x ) ; 
+
+3%3;40/10/2; 2+3/4 +5 ; 
+
+set y= 1+2 ;
+
+set y=(4/2)+2- (3 * 2);
+
+var s:string="foo " + "bar " + " baz";
+var f: float=10.0/2.0-3.0+1.14159;
+
+fun int add_one ( x:int ) set x = x + 1;
+return x; end
+
+fun
+string
+add(
+x:string,y:float
+)
+return x+y
+;end
+
+while x>=1 do
+ set x=x - 1;
+print ( x ) ;
+end
+
+while ((x or y)and(z))or(not v)and not v==0 or not x
+do
+print(y);
+return 5;
+  end
+
+if true then
+print("true"); end
+
+if x < y then
+print("x");
+elif x > y
+then print("y");
+elif x == y
+then print("x or y");
+else print("oops");
+end
+
+
+if x <= y then
+if x == y then print("x or y");
+else print("x"); end
+elif x > y then print("y");
+else print(add_one(x)); end
+
+fun nil comp_(foo_bar:int, baz:string)
+if foo_bar > 0 or not baz then
+  while foo_bar==1 do print(); if baz == nil then print("");end
+  end
+ end
+end

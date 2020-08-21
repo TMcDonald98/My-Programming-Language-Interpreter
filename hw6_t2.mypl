@@ -1,0 +1,42 @@
+# built in functions
+
+print("Should print 5: ");
+print(itos(5));
+print("\n");
+
+print("Should print 3.14: ");
+print(ftos(3.14));
+print("\n");
+
+print("Should print 5: ");
+print(itos(stoi("5")));
+print("\n");
+
+print("Should print 3.14: ");
+print(ftos(stof("3.14")));
+print("\n");
+
+print("Should print 5.0: ");
+print(ftos(itof(5)));
+print("\n");
+
+print("Should print 3: ");
+print(itos(length("abc")));
+print("\n");
+
+print("Should print a: ");
+print(get(0, "abc"));
+print("\n");
+
+print("Should print b: ");
+print(get(1, "abc"));
+print("\n");
+
+print("Should print c: ");
+print(get(2, "abc"));
+print("\n");
+
+# get(3, "abc");
+
+
+

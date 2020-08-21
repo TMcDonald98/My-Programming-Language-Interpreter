@@ -1,0 +1,56 @@
+#
+# This file contains basic cases to get started on. 
+# Commented out lines should result in type errors. 
+# E.g., the line:
+#     "a" + 42;
+# Should output an error. In my implementation it outputs:
+#     error: type mismatch at line 24 column 5 
+#
+
+
+# SimpleRValue
+42;
+3.14159;
+true;
+"abc";
+nil;
+
+# complex expressions over simple values
+5 + 2;
+(3 + 5) + 4;
+3 + (5 + 4);
+"a" + "bc";
+41.5 + 0.7;
+# "a" + 42;
+# true + false;
+# 5 + 42.0;
+# nil + nil;
+# "abc" - "a";
+# 5 - 4.2;
+5 - 6;
+# 5 / 4.0;
+10 % 2;
+# 10 % 2.0;
+
+# basic variable initializations
+var x = 5;
+var x: int = 5;
+set x = 6;
+var x: bool = true;
+set x = false;
+var x: string = "foo";
+set x = "bar";
+var x: float = 3.14;
+set x = 2.0;
+# var x: string = 5;
+# var x = nil;
+var x: float = nil;
+# set x = "foo";
+# set x = 3;
+set x = 3.14;
+
+fun int my_fun(x: int)
+    var r = my_fun(x - 1);
+    set r = 0;
+    return r;
+end

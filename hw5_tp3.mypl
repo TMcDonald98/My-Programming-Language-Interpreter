@@ -1,0 +1,46 @@
+#
+# Basic struct declarations, asignments, and comparisons. Commented
+# out lines should be type errors. 
+#
+
+
+var x: int = 0;
+var y: int = nil;
+
+struct S
+   var x = 0;
+   var y = 1;
+end
+
+struct T
+   var x = 0;
+   var y = 1;
+end
+
+var s1 = new S;
+var s2: S = new S;
+var s3: S = nil;
+var t1 = new T;
+#var s4: T = new S;
+
+while s1 != s2 do 
+    set s1 = s2; 
+end
+
+while s3 != s2 do
+    set s3 = new S;
+    set s2 = nil;
+end
+
+# while t1 != s3 do 1; end
+
+if s1 == nil then
+    set s2 = new S;
+elif s1 != nil then
+    set s2 = nil;
+elif s2 == s1 then
+    set s2 = new S;
+end
+
+
+

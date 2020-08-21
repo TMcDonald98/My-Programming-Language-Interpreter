@@ -1,0 +1,21 @@
+
+var x = 10;
+while x > 0 do
+   set x = x - 1;
+end
+print("should be 0: " + itos(x) + "\n");
+
+if x != 0 or x < 0 then
+    print("if case\n");
+elif x > 0 then
+    print("first elif case\n");
+elif x <= 0 then
+    print("second elif case\n");
+else
+    print("else case");
+end
+
+set x = nil;
+
+if x == nil then print("oops!\n"); end
+

@@ -1,0 +1,39 @@
+#
+# Basic comparisons and nesting. Commented out lines should be errors. 
+#
+
+
+var x = 0;
+var f = 1.0;
+var pass = true;
+
+# boolean expressions
+if true then pass; end
+if false then pass; end
+if false or true then pass; end
+if true and true then pass; end
+if x == nil then pass; end
+# if x >= nil then pass; end
+# if x == true then pass; end
+while (true or false) or (false and true) and (not false) do pass; end
+while x == 0 do pass; end
+while x > 0 or x < 10 do pass; end
+while (not (x==0)) do pass; end
+
+# nested scope
+if true then
+    # set y = 2;
+    if true then
+	    var y = 1;
+	    if true then
+		    if true then
+			    set x = x + y;
+				# set x = x + f;
+		    else
+			    set x = x - y;
+			end
+		end
+	end
+end
+
+

@@ -1,0 +1,60 @@
+
+var x = 0;
+print("x is: ");
+print(itos(x));
+print("\n");
+
+var y = "ab";
+print("y is: ");
+print(y);
+print("\n");
+
+var z = 3.14;
+print("z is: ");
+print(ftos(z));
+print("\n");
+
+print("3 + 4 is: ");
+print(itos(3 + 4));
+print("\n");
+
+print("3 - 4 is: ");
+print(itos(3 - 4));
+print("\n");
+
+print("5 / 2 is: ");
+print(itos(5 / 2));
+print("\n");
+
+print("5 % 2 is: ");
+print(itos(5 % 2));
+print("\n");
+
+
+print("3.03 + 0.11159 is: ");
+print(ftos(3.03 + 0.11159));
+print("\n");
+
+print("3.0 - 4.0 is: ");
+print(ftos(3.0 - 4.0));
+print("\n");
+
+print("5.0 / 2.0 is: ");
+print(ftos(5.0 / 2.0));
+print("\n");
+
+print("'ab' + 'cd' is: ");
+print("ab" + "cd");
+print("\n");
+
+print("Enter a string: ");
+print("You entered: " + reads() + "\n");
+
+print("Enter a number: ");
+print("You entered: " + ftos(readf()) + "\n");
+
+# the itos call below should be an error
+var u: int = nil;
+# print(itos(u) + "\n");
+
+

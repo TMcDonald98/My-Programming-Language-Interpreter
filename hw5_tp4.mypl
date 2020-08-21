@@ -1,0 +1,67 @@
+# 
+# Functions and path expressions. Commented lines should be type
+# errors. 
+# 
+
+var x = 0;
+var y = "a";
+var x: int = nil;
+set y = nil;
+
+struct MyStruct
+    var u = 0;
+    var v = "a";
+#    var w = x + u;
+    var w = x - 1;
+    var y = "b";
+    var ptr: MyStruct = nil;
+end
+
+fun int add(x: int, y: int)
+    var r = x + y;
+    return r;
+end
+
+# fun int add(x: int, x: int) return x + x; end
+
+fun nil println(s: string)
+    print(s + "\n");
+end
+
+println(y);
+println(nil);
+println(print("foo"));
+# println("hello" + nil + "world");
+# println(x);
+# println("hello", "world");
+set x = add(x, x);
+# set x = add(x, y);
+# set x = add(y, x);
+# set x = add(x, x, x);
+# set y = add(3, 4);
+
+fun int my_fun(x: int)
+    var r = my_fun(x - 1);
+    set r = 0;
+    return r;
+end
+
+return nil;
+return 0;
+# return "bad";
+
+# var x: string = my_fun(0);
+
+var z: MyStruct = new MyStruct;
+var u: string = z.ptr.ptr.v;
+set z.ptr = new MyStruct;
+set z.ptr.u = 1;
+set z.ptr.ptr.u = z.ptr.u;
+# set z.ptr.u = z.ptr.y;
+
+# some built in function calls
+var name = reads();
+print("your name is: " + name);
+var name_len: int = length(name);
+print("last character is not: " + get(length(name) + 1, name));
+
